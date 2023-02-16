@@ -18,25 +18,32 @@
 let puntajes = {
     usuario: 0,
     computadora: 0,
+    empates: 0
 }
 
 const nombreJugador = iniciarJuego();
 
+// alert(resultadoDePartida);
+
 // 👇 mientras ninguno haya llegado a 2 puntos seguimos jugando
-while (puntajes.usuario < 2 && puntajes.computadora < 2) {
+while (puntajes.usuario < 2 && puntajes.computadora < 2 ) {
 
 
     const resultadoDePartida = compararJugadas()
     alert(resultadoDePartida);
+    
 
     console.log(resultadoDePartida);
     if (resultadoDePartida.includes("ganaste")) {
         puntajes.usuario++;
     } else if (resultadoDePartida.includes("ganaste")) {
         puntajes.computadora++
+    } else {
+        puntajes.empates++
     }
 
     console.table(puntajes);
+    alert(puntajes)
 
 }
 

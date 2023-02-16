@@ -70,6 +70,7 @@ function compararJugadas() {
     }
 
     // devolvemos la frase con el resultado de la partida
+    
     return resultadoRonda;
 }
 
@@ -78,6 +79,20 @@ const resultadoDePartida = compararJugadas()
 /*                          CONSIGNA MESA DE TRABAJO                          */
 /* -------------------------------------------------------------------------- */
 // 1- Crear una función que reciba como parametro un texto (la frase de resultado de la partida).
+
+function mostramosPorConsola(texto) {
+
+    console.log(texto)
+    alert("El resultado de la partida es :" + texto)
+
+    if (texto === 'Una lástima, perdiste.') { 
+        alert("Segui participando!!")
+    }
+
+}
+mostramosPorConsola(resultadoDePartida)
+
+
 // 2- La función debe mostrar por consola el resultado de la partida.
 // 3- A su vez debe mostrar al usuario una alerta con el resutado de la partida.
 // 4- Finalmente, si el resultado fue una derrota debe mostrarle al usuario un mensaje de aliento para desearle suerte en la próxima oportunidad.

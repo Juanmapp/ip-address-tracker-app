@@ -2,27 +2,25 @@
 /*                                  FUNCION 1                                 */
 /* -------------------------------------------------------------------------- */
 function iniciarJuego() {
-    
+
+    // suludamos al usuario
     alert("Bienvenido al piedra papel o tijera de Frontend II.");
     // guardamos en una variable en nombre ingresado
     let nombre = prompt("Ingese su nombre por favor:")
-
-    if (typeof nombre === "string" && nombre.length >= 3 && isNaN(nombre)) {
-        
-}   else {
-    while (!(typeof nombre === "string" && nombre.length >= 3 && isNaN(nombre))) {
-        alert("Por favor, ingrese un dato valido");
-        nombre = prompt("Ingese su nombre por favor:")
+    
+    while (!isNaN(nombre) || (nombre.length < 3)){
+        nombre = prompt("Invalido, Ingresa un nombre valido: ")
     }
-}
-alert("Gracias por jugar " + nombre + ". ¡Mucha suerte!");
+
+    alert("Gracias por jugar " + nombre + ". ¡Mucha suerte!");
+
     // mostramos los datos por consola
     console.log("----------------------------");
     console.log("El jugador es:")
     console.log(nombre);
     console.log("----------------------------");
 
-    return nombre.toUpperCase;
+    return nombre;
 }
 
 // creamos una variable a nivel global para guardar el nombre del jugador que nos devuelve la función
