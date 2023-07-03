@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <title>Administrador</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/post_turnos.js"></script>
+    <script src="./js/getDrop_odontologo.js"></script>
+    
+    
+</head>
+<body>
+    <div class="container">
+        <header class="text-right">
+            <label class="control-label" for="id_paciente">Paciente:</label>
+            <input class="col-1" type="number" id="id_paciente" 
+            placeholder="ID" name="paciente-id" required>
+            <a class="my-1 btn btn-outline-danger" href="../index.html">Salir</a>
+        </header>
+
+        <h4 class="text-center">Clinica </h4>
+        <h1 class="text-center">USUARIO</h1>
+        
+        <div class="col-6 mx-auto" style="background-color:#efefef; padding:10px; border-radius:3px">            
+            
+            <form id="add_new_turno" class="mx-2">    
+                
+                <h3>Agendar nuevo turno</h3>
+                
+                <div class="form-group">
+                    <label class="control-label" for="dropdown_odontologos">Odontologo:</label>
+                    <select type="select" class="custom-select" id="dropdown_odontologos">
+                        <option value="">Seleccione el odontólogo</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label" for="fecha">Fecha:</label>
+                    <input type="date" class="form-control" id="fecha"
+                           name="fecha" required>
+                </div>
+                
+                <div class="form-group">
+                    <label class="control-label" for="hora">Hora:</label>
+                    <select type="select" class="form-control" id="hora" name="hora" required>
+                        <option value="09:00:00">9:00am</option>
+                        <option value="09:30:00">9:30am</option>
+                        <option value="10:00:00">10:00am</option>
+                        <option value="10:30:00">10:30am</option>
+                        <option value="11:00:00">11:00am</option>
+                        <option value="11:30:00">11:30am</option>
+                        <option value="12:00:00">12:00am</option>
+                        <option value="12:30:00">12:30am</option>
+                        <option value="13:00:00">13:00am</option>
+                        <option value="13:30:00">13:30am</option>
+                        <option value="14:00:00">14:00am</option>
+                        <option value="14:30:00">14:30am</option>
+                        <option value="15:00:00">15:00am</option>
+                        <option value="15:30:00">15:30am</option>
+                        <option value="16:00:00">16:00am</option>
+                        <option value="16:30:00">16:30am</option>
+                        <option value="17:00:00">17:00am</option>
+                        <option value="17:30:00">17:30am</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-dark" id="btn-add-new-turno"> Agendar </button>
+            
+            </form>
+            
+        </div>
+
+        <a type="button" id="btn_turnosList" href="./listadoTurnos.html" class="col-6 mx-auto my-2 btn btn-block btn-primary">Ver mis turnos</a>
+    </div>
+</body>
+</html>
