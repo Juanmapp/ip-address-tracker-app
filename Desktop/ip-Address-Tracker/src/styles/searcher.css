@@ -1,0 +1,15 @@
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+input {
+    font-size: 18px;
+    width: 50%; /* Asegura que el input ocupe todo el ancho disponible */
+  /* Ajusta el tamaño de fuente según el ancho de la ventana gráfica */
+  
+    
+}
