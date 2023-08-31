@@ -1,15 +1,46 @@
 
 form {
-    display: flex;
+     display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
+    
+  border-radius: 20px;
+  overflow: hidden;
     
 }
-input {
-    font-size: 18px;
+ input {
+    /* font-size: 18px;
     width: 50%; /* Asegura que el input ocupe todo el ancho disponible */
   /* Ajusta el tamaño de fuente según el ancho de la ventana gráfica */
-  
+    /* border-radius: 16px;
+    padding : 10px */ 
     
 }
+
+
+input {
+  font-size: 18px;
+  border: none;
+  border-radius: 20px 0 0 20px;
+  padding: 15px;
+  padding-left: 25px;
+  width: 40%
+}
+
+button {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  padding: 15px 20px;
+  cursor: pointer;
+  }
+  button {
+    font-size: 18px;
+    /* border-radius: 16px;
+    padding: 10px;
+    position: absolute;
+    margin-left: 400px; */
+  
+  } 
