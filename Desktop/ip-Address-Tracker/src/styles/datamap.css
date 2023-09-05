@@ -1,0 +1,15 @@
+div ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px;
+    padding: 0px;
+
+    
+}
+
+.data-div {
+    background-color: white;
+    padding: 15px;
+    border-radius: 16px;
+    
+}
